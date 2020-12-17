@@ -30,3 +30,6 @@ URL - https://the-internet.herokuapp.com/broken_images
 
 This test focuses on identifying broken images in the webpage. To achieve this we take the help of javascript function "naturalwidth" . If the image is broken its natural width and height are zero. With the help of javascript executor we have tested broken images in the url mentioned above.
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Work in progress for more Functionalities :) 
