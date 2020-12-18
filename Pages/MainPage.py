@@ -16,7 +16,10 @@ class MainPage(BasePage):
 
     locator_broken_images_page=(By.XPATH,"//a[@href='/broken_images']")
 
+    #challenging dom
 
+    locator_challenging_dom_page=(By.CSS_SELECTOR,"a[href='/challenging_dom']")
+    
 
 
     #actions of the main Page
@@ -24,3 +27,7 @@ class MainPage(BasePage):
     def click_on_broken_images(self):
 
         self.perform_click(self.locator_broken_images_page)
+
+    def click_on_challenging_dom(self):
+
+        self.perform_click(self.locator_challenging_dom_page)

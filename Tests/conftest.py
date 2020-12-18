@@ -3,7 +3,7 @@ from selenium import webdriver
 from Config.Config import ConfigClass
 
 
-@pytest.fixture(params=['firefox',],scope="class")
+@pytest.fixture(params=['firefox',],scope="function")
 def init_driver(request):
 
     if request.param == 'firefox':
@@ -23,8 +23,6 @@ def init_driver(request):
     web_driver.get(ConfigClass.BASE_URL)
     web_driver.maximize_window
     web_driver.implicitly_wait(20)
-
-    
 
     yield
 
