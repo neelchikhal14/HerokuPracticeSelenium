@@ -20,7 +20,9 @@ class MainPage(BasePage):
 
     locator_challenging_dom_page=(By.CSS_SELECTOR,"a[href='/challenging_dom']")
     
+    #checkboxes page
 
+    locator_checkboxes_page=(By.CSS_SELECTOR,"a[href='/checkboxes']")
 
     #actions of the main Page
 
@@ -31,3 +33,8 @@ class MainPage(BasePage):
     def click_on_challenging_dom(self):
 
         self.perform_click(self.locator_challenging_dom_page)
+
+    def click_on_checkboxes_page(self):
+
+        self.perform_click(self.locator_checkboxes_page)
+

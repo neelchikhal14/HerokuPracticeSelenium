@@ -1,7 +1,8 @@
 i=3
 
-base_string_start="return document.getElementsByTagName('img')["
-base_string_end="].naturalHeight"
+
+base_string_start="return check_box_elements_list["
+base_string_end="].checked"
 
 
 

@@ -47,3 +47,20 @@ class BasePage():
 
         return natural_heights
 
+    def status_of_check_box(self,locator):
+        element_list=WebDriverWait(self.driver,10).until(EC.visibility_of_all_elements_located(locator))
+
+        check_box_status_list=[]
+
+
+        for data in range(0,len(element_list)):
+
+            check_box_status_list.append(element_list[data].is_selected())
+
+        return check_box_status_list
+
+    def get_all_checkboxes(self,locator):
+
+        all_checkboxes_list=WebDriverWait(self.driver,10).until(EC.presence_of_all_elements_located(locator))
+            
+        return all_checkboxes_list
