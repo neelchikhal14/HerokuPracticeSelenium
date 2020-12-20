@@ -21,7 +21,7 @@ Pytest:6.1.2
 
 BASE_URL = https://the-internet.herokuapp.com/
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 TestBrokenImages.py
@@ -30,6 +30,13 @@ URL - https://the-internet.herokuapp.com/broken_images
 
 This test focuses on identifying broken images in the webpage. To achieve this we take the help of javascript function "naturalwidth" . If the image is broken its natural width and height are zero. With the help of javascript executor we have tested broken images in the url mentioned above.
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+ChallengeDom.py
+-------------------
+URL - https://the-internet.herokuapp.com/challenging_dom
+
+This test focuses on creating robust locators. The parent table has usable attributes like id,class,text or link text etc which can be used to create locator. In this test we try to obtain table data from 5th row of the table along with table headers using special css selectors. Along with this, we also try to click on middle button. Again the button poses same problem, it has usable attributes like id,class,text or link text etc which can be used to create locator.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Work in progress for more Functionalities :) 
