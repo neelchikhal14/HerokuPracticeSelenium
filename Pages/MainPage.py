@@ -26,6 +26,10 @@ class MainPage(BasePage):
 
     #frames page
     locator_frames_page=(By.CSS_SELECTOR,"a[href='/frames']")
+
+    #slider page
+    locator_slider_page=(By.CSS_SELECTOR,"a[href='/horizontal_slider']")
+
     
 
     #actions of the main Page
@@ -45,3 +49,7 @@ class MainPage(BasePage):
     def click_on_frames_page(self):
 
         self.perform_click(self.locator_frames_page)
+
+    def click_on_slider_page(self):
+
+        self.perform_click(self.locator_slider_page)

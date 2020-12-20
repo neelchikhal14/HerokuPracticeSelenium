@@ -68,4 +68,32 @@ class BasePage():
 
     def switch_to_frame(self,frame_name):
 
+
         self.driver.switch_to.frame(frame_name)
+
+    def click_and_move_slider(self,locator,slider_value):
+
+        slider_element=WebDriverWait(self.driver,10).until(EC.visibility_of_element_located(locator))
+
+        action=ActionChains(self.driver)
+
+        action.move_to_element(slider_element)
+        action.click(slider_element)
+
+        """My slider range is 0 to 5 with steps of 0.5 , so half is 2.5"""
+        counts=0
+        if (slider_value > 2.5):
+
+            counts=int((slider_value-2.5)/0.5)
+            for count in range(0,counts):
+                action.send_keys(Keys.ARROW_RIGHT)
+        else:
+            counts=int((2.5-slider_value)/0.5)
+            for count in range(0,counts):
+                action.send_keys(Keys.ARROW_LEFT)
+        #reset the slider to 0 since on clicking slider it will by default click at middle
+
+        action.perform()
+
+        
+
