@@ -61,6 +61,11 @@ class BasePage():
 
     def get_all_checkboxes(self,locator):
 
+
         all_checkboxes_list=WebDriverWait(self.driver,10).until(EC.presence_of_all_elements_located(locator))
             
         return all_checkboxes_list
+
+    def switch_to_frame(self,frame_name):
+
+        self.driver.switch_to.frame(frame_name)

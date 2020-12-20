@@ -24,6 +24,10 @@ class MainPage(BasePage):
 
     locator_checkboxes_page=(By.CSS_SELECTOR,"a[href='/checkboxes']")
 
+    #frames page
+    locator_frames_page=(By.CSS_SELECTOR,"a[href='/frames']")
+    
+
     #actions of the main Page
 
     def click_on_broken_images(self):
@@ -38,3 +42,6 @@ class MainPage(BasePage):
 
         self.perform_click(self.locator_checkboxes_page)
 
+    def click_on_frames_page(self):
+
+        self.perform_click(self.locator_frames_page)
