@@ -32,6 +32,10 @@ class MainPage(BasePage):
 
     #jquery-menu page
     locator_jquery_menu=(By.XPATH,"//a[@href='/jqueryui/menu']")
+
+    #file-upload page
+    locator_file_upload_page=(By.XPATH,"//a[@href='/upload']")
+
     #actions of the main Page
 
     def click_on_broken_images(self):
@@ -57,3 +61,7 @@ class MainPage(BasePage):
     def click_on_jquerymenu_page(self):
 
         self.perform_click(self.locator_jquery_menu)
+
+    def click_on_fileupload_page(self):
+
+        self.perform_click(self.locator_file_upload_page)

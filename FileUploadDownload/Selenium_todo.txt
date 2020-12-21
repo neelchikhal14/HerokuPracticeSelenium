@@ -1,0 +1,9 @@
+Digest Auth (optional)
+
+
+Drag & Drop	not working
+
+Geolocation
+Dynamic controls
+File Upload
+File DOwnload

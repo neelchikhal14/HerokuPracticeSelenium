@@ -14,3 +14,5 @@ class ConfigClass():
     GECKODRIVER_PATH=os.path.join(PARENT_DIR,'Drivers','geckodriver.exe')
 
     CHROMEDRIVER_PATH=os.path.join(PARENT_DIR,'Drivers','chromedriver.exe')
+
+    FILE_PATH_TO_BE_UPLOADED=os.path.join(PARENT_DIR,'FileUploadDownload','Selenium_todo.txt')

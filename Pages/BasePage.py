@@ -95,18 +95,6 @@ class BasePage():
 
         action.perform()
 
-    def mouse_over_to_element(self,locator,click_action):
 
-        element=WebDriverWait(self.driver,10).until(EC.visibility_of_element_located(locator))
-
-        action = ActionChains(self.driver)
-
-        action.move_to_element(element)
-
-        if click_action == 'yes':
-
-            action.click()
-        
-        action.perform()
 
 
