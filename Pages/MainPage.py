@@ -30,8 +30,8 @@ class MainPage(BasePage):
     #slider page
     locator_slider_page=(By.CSS_SELECTOR,"a[href='/horizontal_slider']")
 
-    
-
+    #jquery-menu page
+    locator_jquery_menu=(By.XPATH,"//a[@href='/jqueryui/menu']")
     #actions of the main Page
 
     def click_on_broken_images(self):
@@ -53,3 +53,7 @@ class MainPage(BasePage):
     def click_on_slider_page(self):
 
         self.perform_click(self.locator_slider_page)
+    
+    def click_on_jquerymenu_page(self):
+
+        self.perform_click(self.locator_jquery_menu)
