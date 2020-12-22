@@ -25,7 +25,7 @@ class FileUpload(BasePage):
 
     def perform_file_upload(self):
 
-        file_path="D:\\Python Selenium\\HerokuPracticeSelenium\\FileUploadDownload\\Selenium_todo.txt"
+        
 
         time.sleep(2)
         pyautogui.click(x=244, y=277)
@@ -34,7 +34,7 @@ class FileUpload(BasePage):
         pyautogui.click(x=272, y=803)
 
         time.sleep(2)
-        pyautogui.write(file_path, interval=0.25)
+        pyautogui.write(ConfigClass.FILE_PATH_TO_BE_UPLOADED, interval=0.25)
 
         time.sleep(2)
         pyautogui.click(x=1705, y=843)
