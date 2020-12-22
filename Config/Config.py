@@ -5,6 +5,8 @@ class ConfigClass():
 
     BASE_URL="https://the-internet.herokuapp.com/"
 
+    BASE_URL_DandD="https://jqueryui.com/droppable/#default"
+
     PARENT_DIR=Path(__file__).parent.parent
 
     AUTH_UNAME="admin"

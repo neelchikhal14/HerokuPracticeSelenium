@@ -95,8 +95,15 @@ class BasePage():
 
         action.perform()
 
+    def switch_to_iframe(self,locator):
+        element=WebDriverWait(self.driver,10).until(EC.visibility_of_element_located(locator))
+        self.driver.switch_to.frame(element)
 
+    def drag_andDrop(self,src_ele_locator,dest_ele_locator):
 
+        src_ele=WebDriverWait(self.driver,10).until(EC.visibility_of_element_located(src_ele_locator))
+        dest_ele=WebDriverWait(self.driver,10).until(EC.visibility_of_element_located(dest_ele_locator))
 
-
+        action=ActionChains(self.driver)
+        action.drag_and_drop(src_ele,dest_ele).perform()
 
