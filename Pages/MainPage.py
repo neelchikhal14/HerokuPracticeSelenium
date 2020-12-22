@@ -36,6 +36,9 @@ class MainPage(BasePage):
     #file-upload page
     locator_file_upload_page=(By.XPATH,"//a[@href='/upload']")
 
+    #file-download page
+    locator_file_download_page=(By.XPATH,"//a[@href='/download']")
+
     #actions of the main Page
 
     def click_on_broken_images(self):
@@ -65,3 +68,10 @@ class MainPage(BasePage):
     def click_on_fileupload_page(self):
 
         self.perform_click(self.locator_file_upload_page)
+
+    def click_on_filedownload_page(self):
+
+        self.perform_click(self.locator_file_download_page)
+    
+
+    
